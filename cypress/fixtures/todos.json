@@ -1,0 +1,7 @@
+[
+	{ "name": "Learn Cypress", "isComplete": false },
+	{ "name": "Learn React", "isComplete": true },
+	{ "name": "Drink Coffee", "isComplete": false },
+	{ "name": "Drink Cola", "isComplete": true },
+	{ "name": "Drink Water", "isComplete": false }
+]

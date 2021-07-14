@@ -10,18 +10,23 @@
 	},
 	"devDependencies": {
 		"json-server-auth": "^2.0.2",
-		"react-scripts": "4.0.3"
+		"npm-run-all": "^4.1.5",
+		"react-scripts": "4.0.3",
+		"start-server-and-test": "^1.12.6"
 	},
 	"scripts": {
 		"start:frontend": "react-scripts start",
 		"start:server": "json-server -p 8080 db.json -m ./node_modules/json-server-auth -r routes.json",
-		"start:cypress": "cypress open",
-		"start:cypress-headless": "cypress run",
-		"start:cypress-spec": "cypress run --spec",
-		"start:cypress-headless-chrome": "cypress run --browser chrome --headless",
-		"start:cypress-headless-edge": "cypress run --browser edge --headless",
-		"start:cypress-headless-firefox": "cypress run --browser firefox --headless",
-		"start:cypress-record": "cypress run --record --key f8b14f01-d94e-4cd5-85cb-d1e6ef635bc9",
+		"start:cy": "cypress open",
+		"start:cy-headless": "cypress run",
+		"start:cy-spec": "cypress run --spec",
+		"start:cy-headless-chrome": "cypress run --browser chrome --headless",
+		"start:cy-headless-edge": "cypress run --browser edge --headless",
+		"start:cy-headless-firefox": "cypress run --browser firefox --headless",
+		"start:cy-record": "cypress run --record --key f8b14f01-d94e-4cd5-85cb-d1e6ef635bc9",
+		"start": "npm-run-all --parallel start:server start:frontend",
+		"build:and:test": "start-server-and-test start http://localhost:3000 start:cy-record",
+		"run:docker": "docker build -f Dockerfile -t todoappcontainer .",
 		"build": "react-scripts build",
 		"test": "react-scripts test --env=jsdom",
 		"eject": "react-scripts eject"

@@ -83,7 +83,7 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="App-header">
-                    <h2>QAcart To-Do App</h2>
+                    <h2>ToDo App</h2>
                 </div>
                 <div className="Todo-App">
                     {this.state.errorMessage && (

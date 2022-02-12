@@ -1,36 +1,5 @@
 {
-  "todos": [
-    {
-      "name": "e",
-      "id": 9328,
-      "isComplete": true
-    },
-    {
-      "name": "e",
-      "id": 151,
-      "isComplete": true
-    },
-    {
-      "name": "e",
-      "id": 2604,
-      "isComplete": true
-    },
-    {
-      "name": "e",
-      "id": 9542,
-      "isComplete": false
-    },
-    {
-      "name": "e",
-      "id": 1331,
-      "isComplete": true
-    },
-    {
-      "name": "e",
-      "id": 5332,
-      "isComplete": false
-    }
-  ],
+  "todos": [],
   "users": [
     {
       "email": "olivier@mail.com",

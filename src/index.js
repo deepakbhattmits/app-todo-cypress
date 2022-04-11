@@ -1,13 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
-import { Router } from './components/router';
-
-ReactDOM.render(
-    <Router>
-        {' '}
-        <App />
-    </Router>,
-    document.getElementById('root')
-);
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App'
+import './index.css'
+import { Router } from './components/router'
+const rootElement = document.getElementById('root')
+const root = createRoot(rootElement)
+root.render(
+  <Router>
+    <App />
+  </Router>,
+)
